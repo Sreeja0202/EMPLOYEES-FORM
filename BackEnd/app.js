@@ -2,8 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('./db.js');
 const routes = require('./routes/employee.routes.js');
-const router = require('./routes/employee.routes.js');
-const Employee = require('./model/employee.model.js');
+
 
 const app = express();
 

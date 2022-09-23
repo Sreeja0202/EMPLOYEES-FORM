@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://sreejamohan444:pK2JPj7WrRHOwLR9@cluster0.mwlsecd.mongodb.net/Employeedb', err=>
+mongoose.connect('mongodb+srv://sreejamohan444:SGX9eYjijOjz2QXf@cluster0.mwlsecd.mongodb.net/Employeedb', err=>
 {
     if(!err)
     {

@@ -14,7 +14,7 @@ router.get('/:id', (req,res)=>
         {
             if(err)
             {
-                console.log('Error in getting data by salary', +err);
+                console.log('Error in getting data by id', +err);
             }
             else
             {
@@ -93,6 +93,10 @@ router.put('/:id', (req,res)=>
             }
         });
     }
+    else
+    {
+        return res.status(400).send(`No record found with Employee with id ${req.params.id}`);
+    }
         
 });
 
@@ -114,7 +118,10 @@ router.delete('/:id', (req,res)=>
             }
         });
     }
-        
+    else
+    {
+        return res.status(400).send(`No record found with Employee with id ${req.params.id}`);
+    }   
 });
 
 
